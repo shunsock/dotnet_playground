@@ -1,0 +1,13 @@
+
+version: 2
+updates:
+  # Maintain dependencies for .NET
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    # Optional: Add labels to the created pull requests
+    labels:
+      - "dependencies"
+      - "automerge"
