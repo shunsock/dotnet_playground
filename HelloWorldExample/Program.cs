@@ -1,14 +1,13 @@
-﻿using System;
+﻿using MyFirstProject.Service.Runner;
 
 namespace MyFirstProject
 {
     class Program
     {
-
         static void Main()
         {
-            MyFirstClass myFirstInstance = new MyFirstClass();
-            myFirstInstance.Main();
+            FizzBuzzRunner runner = new FizzBuzzRunner();
+            runner.Run(30);
         }
     }
 }
