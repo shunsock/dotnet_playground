@@ -16,7 +16,7 @@ namespace MyFirstProject.Service.TextOutPutter
             Console.WriteLine(this.Text);
         }
 
-        public void SetTextFromNumbers(int number)
+        public void SetTextFromNumber(int number)
         {
             this.text = number.ToString();
         }

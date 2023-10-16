@@ -28,7 +28,7 @@ namespace MyFirstProject.Service.Runner
                 }
                 else
                 {
-                    numbers.SetTextFromNumbers(i);
+                    numbers.SetTextFromNumber(i);
                     numbers.Output();
                 }
             }
