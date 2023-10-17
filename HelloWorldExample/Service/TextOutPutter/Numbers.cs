@@ -2,23 +2,16 @@ using System;
 
 namespace MyFirstProject.Service.TextOutPutter
 {
-    public class Numbers : ITextOutPutWithSetter
+    public class Numbers : TextOutPutter
     {
-        private string text = "0";
-
-        public string Text
+        public Numbers()
         {
-            get { return text; }
-        }
-
-        public void Output()
-        {
-            Console.WriteLine(this.Text);
+            this._text = "0";
         }
 
         public void SetTextFromNumber(int number)
         {
-            this.text = number.ToString();
+            this._text = number.ToString();
         }
     }
 }

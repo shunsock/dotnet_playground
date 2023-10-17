@@ -16,7 +16,7 @@ namespace MyFirstProject.Service.TextOutPutter.Tests
         public void CanCallBuzz()
         {
             FizzBuzz fizzBuzz = new FizzBuzz();
-            string result = fizzBuzz.Text;
+            string result = fizzBuzz.GetText();
             string expected = "FizzBuzz";
             Assert.That(result, Is.EqualTo(expected));
         }

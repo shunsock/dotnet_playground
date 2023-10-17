@@ -2,18 +2,11 @@ using System;
 
 namespace MyFirstProject.Service.TextOutPutter
 {
-        public class Buzz : ITextOutPut
+    public class Buzz : TextOutPutter
     {
-        private string text = "Buzz";
-
-        public string Text
+        public Buzz()
         {
-            get { return text; }
-        }
-
-        public void Output()
-        {
-            Console.WriteLine(this.Text);
+            this._text = "Buzz";
         }
     }
 }
