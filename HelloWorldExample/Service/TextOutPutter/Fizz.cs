@@ -2,18 +2,11 @@ using System;
 
 namespace MyFirstProject.Service.TextOutPutter
 {
-    public class Fizz : ITextOutPut
+    public class Fizz : TextOutPutter
     {
-        private string text = "Fizz";
-
-        public string Text
+        public Fizz()
         {
-            get { return text; }
-        }
-
-        public void Output()
-        {
-            Console.WriteLine(this.Text);
+            this._text = "Fizz";
         }
     }
 }
